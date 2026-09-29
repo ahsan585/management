@@ -1,0 +1,9 @@
+/* Teacher Notes — overrides on top of admin-notes.css */
+/* admin-notes.css is loaded first via $pageCss array    */
+
+/* Stats numbers use green accent for teacher */
+.teacher-notes .an-stat-num { color: #16a34a; }
+
+/* Submit button green for teacher */
+.teacher-notes .an-submit-btn { background: #16a34a; }
+.teacher-notes .an-submit-btn:hover { background: #15803d; }

@@ -1,0 +1,105 @@
+/* Timetable — admin / teacher / student */
+
+.tt-day-group { margin-bottom: 22px; }
+
+.tt-day-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #2563eb;
+  padding: 5px 0 8px;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 8px;
+}
+
+/* Table */
+.admin-timetable .table th,
+.teacher-timetable .table th,
+.student-timetable .table th {
+  background: #f8fafc;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.admin-timetable .table tr:hover td,
+.teacher-timetable .table tr:hover td,
+.student-timetable .table tr:hover td { background: #f8fafc; }
+
+/* Admin form rows */
+.admin-timetable .form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+.admin-timetable .form-row .input-group {
+  flex: 1;
+  margin-bottom: 14px;
+}
+
+/* Admin timetable form inputs — inherits from base.css */
+
+/* Delete btn */
+.admin-timetable .delete-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 0.78rem;
+  padding: 0;
+}
+
+.admin-timetable .delete-btn:hover { background: #fecaca; }
+
+/* Period badge */
+.tt-period-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: #dbeafe;
+  color: #1e40af;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* Today card */
+.today-card {
+  border: 1px solid #bbf7d0;
+  background: #f0fdf4;
+}
+
+.today-label { color: #16a34a; }
+
+.today-badge {
+  background: #dcfce7;
+  color: #16a34a;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .admin-timetable .form-row { flex-direction: column; gap: 0; }
+  .admin-timetable .table,
+  .teacher-timetable .table,
+  .student-timetable .table { min-width: 420px; }
+}
+
+@media (max-width: 640px) {
+  .tt-list-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+}

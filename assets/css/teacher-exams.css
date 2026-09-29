@@ -1,0 +1,136 @@
+/* Teacher Exams */
+
+.teacher-exams .te-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.teacher-exams .te-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.teacher-exams .te-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+.teacher-exams .te-count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  height: 26px;
+  padding: 0 8px;
+  border-radius: 6px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.teacher-exams .te-empty {
+  text-align: center;
+  padding: 48px 20px;
+  color: #94a3b8;
+}
+
+.teacher-exams .te-empty i {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 12px;
+  opacity: 0.35;
+}
+
+.teacher-exams .te-empty p { margin: 0; font-size: 0.9rem; }
+
+.teacher-exams .te-class-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: none;
+}
+
+.teacher-exams .te-class-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.teacher-exams .te-class-badge {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+  padding: 4px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.teacher-exams .te-class-count {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.teacher-exams .te-table-wrap { overflow-x: auto; }
+
+.teacher-exams .te-table th {
+  background: #f8fafc;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  font-weight: 600;
+  padding: 10px 14px;
+}
+
+.teacher-exams .te-table td { padding: 10px 14px; }
+.teacher-exams .te-table tr:hover td { background: #f8fafc; }
+
+.teacher-exams .te-col-num {
+  width: 40px;
+  color: #94a3b8;
+  font-size: 0.82rem;
+}
+
+.teacher-exams .te-exam-name { font-weight: 600; color: #0f172a; }
+
+.teacher-exams .te-today-badge {
+  background: #fef3c7;
+  color: #d97706;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+.teacher-exams .te-row-today td { background: #fffbeb; }
+
+.teacher-exams .te-subject-badge {
+  background: #f3e8ff;
+  color: #7c3aed;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.teacher-exams .te-date,
+.teacher-exams .te-time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}

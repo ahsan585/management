@@ -1,0 +1,93 @@
+/* Student Attendance */
+
+.student-attendance .att-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.student-attendance .att-stat-card {
+  padding: 18px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.06);
+  text-align: center;
+}
+
+.student-attendance .att-stat-card strong {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.student-attendance .att-stat-card span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.student-attendance .att-stat-card.present { background: #dcfce7; }
+.student-attendance .att-stat-card.absent  { background: #fee2e2; }
+.student-attendance .att-stat-card.late    { background: #fef9c3; }
+.student-attendance .att-stat-card.total   { background: #dbeafe; }
+
+.student-attendance .att-stat-card.present strong,
+.student-attendance .att-stat-card.present span { color: #15803d; }
+.student-attendance .att-stat-card.absent  strong,
+.student-attendance .att-stat-card.absent  span { color: #dc2626; }
+.student-attendance .att-stat-card.late    strong,
+.student-attendance .att-stat-card.late    span { color: #ca8a04; }
+.student-attendance .att-stat-card.total   strong,
+.student-attendance .att-stat-card.total   span { color: #1e40af; }
+
+/* Table */
+.student-attendance .table th {
+  background: #f1f5f9;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #475569;
+}
+
+.student-attendance .table tr:hover td { background: #f8fafc; }
+
+/* Status badge */
+.student-attendance .status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.student-attendance .status-badge.present { background: #dcfce7; color: #16a34a; }
+.student-attendance .status-badge.absent  { background: #fee2e2; color: #dc2626; }
+.student-attendance .status-badge.late    { background: #fef9c3; color: #ca8a04; }
+
+/* Filter inputs */
+.student-attendance input[type="month"] {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 0.9rem;
+}
+
+.student-attendance input[type="month"]:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,.12);
+  outline: none;
+}
+
+@media (max-width: 640px) {
+  .student-attendance .att-stats { grid-template-columns: 1fr 1fr; }
+  .student-attendance .att-stat-card strong { font-size: 1.4rem; }
+  .student-attendance .table { min-width: 360px; }
+}
+
+@media (max-width: 640px) {
+  .student-attendance .att-stats { grid-template-columns: 1fr 1fr; }
+}

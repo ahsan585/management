@@ -1,0 +1,406 @@
+/* ============================================================
+   Teacher Timetable — Pro Design
+   No transitions, no gradients
+   ============================================================ */
+
+/* ── Topbar ── */
+.teacher-timetable .tt-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.teacher-timetable .tt-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.teacher-timetable .tt-page-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+/* ── Section Card ── */
+.teacher-timetable .tt-section-card {
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: none;
+}
+
+/* ── Section Head ── */
+.teacher-timetable .tt-section-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  flex-wrap: wrap;
+}
+
+.teacher-timetable .tt-section-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  border: 1px solid transparent;
+}
+
+.teacher-timetable .tt-icon-blue {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #2563eb;
+}
+
+.teacher-timetable .tt-icon-amber {
+  background: #fffbeb;
+  border-color: #fde68a;
+  color: #d97706;
+}
+
+.teacher-timetable .tt-section-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.teacher-timetable .tt-section-sub {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* ── Filter Form ── */
+.teacher-timetable .tt-filter-form {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.teacher-timetable .tt-select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 0.85rem;
+  color: #374151;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.teacher-timetable .tt-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,.1);
+}
+
+.teacher-timetable .tt-clear-btn {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 7px;
+  font-size: 0.82rem;
+  color: #475569;
+  background: #f8fafc;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.teacher-timetable .tt-clear-btn:hover {
+  background: #f1f5f9;
+}
+
+/* ── Hint / Empty states ── */
+.teacher-timetable .tt-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: #64748b;
+}
+
+.teacher-timetable .tt-hint i { color: #3b82f6; }
+
+.teacher-timetable .tt-empty-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: #94a3b8;
+}
+
+.teacher-timetable .tt-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #94a3b8;
+}
+
+.teacher-timetable .tt-empty i {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 10px;
+  opacity: 0.35;
+}
+
+.teacher-timetable .tt-empty p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ── Day Block (Class Timetable) ── */
+.teacher-timetable .tt-day-block {
+  margin-bottom: 24px;
+}
+
+.teacher-timetable .tt-day-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #2563eb;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 10px;
+}
+
+.teacher-timetable .tt-day-label i {
+  font-size: 0.55rem;
+  color: #93c5fd;
+}
+
+.teacher-timetable .tt-day-count {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* ── Exam Class Block ── */
+.teacher-timetable .tt-exam-class-block {
+  margin-bottom: 24px;
+}
+
+.teacher-timetable .tt-exam-class-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.teacher-timetable .tt-class-badge {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+  padding: 4px 14px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.teacher-timetable .tt-exam-class-count {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+.teacher-timetable .tt-exam-total-badge {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+/* ── Table ── */
+.teacher-timetable .tt-table-wrap {
+  overflow-x: auto;
+}
+
+.teacher-timetable .tt-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+
+.teacher-timetable .tt-table thead tr {
+  background: #f8fafc;
+}
+
+.teacher-timetable .tt-table th {
+  padding: 10px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.teacher-timetable .tt-table td {
+  padding: 11px 14px;
+  font-size: 0.88rem;
+  color: #1f2a37;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.teacher-timetable .tt-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.teacher-timetable .tt-table tbody tr:hover td {
+  background: #f8fafc;
+}
+
+/* Column widths */
+.teacher-timetable .tt-col-period { width: 70px; }
+.teacher-timetable .tt-col-time   { width: 120px; }
+.teacher-timetable .tt-col-num    { width: 40px; color: #94a3b8; font-size: 0.82rem; }
+
+/* Period pill */
+.teacher-timetable .tt-period-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* Time cell */
+.teacher-timetable .tt-time-cell {
+  color: #64748b;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.teacher-timetable .tt-time-cell i { color: #10b981; font-size: 0.78rem; }
+
+/* Subject cell */
+.teacher-timetable .tt-subject-cell {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Teacher cell */
+.teacher-timetable .tt-teacher-cell {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* Subject badge (exam table) */
+.teacher-timetable .tt-subject-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #f3e8ff;
+  color: #7c3aed;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Date cell */
+.teacher-timetable .tt-date-cell {
+  color: #374151;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.teacher-timetable .tt-date-cell i { color: #3b82f6; font-size: 0.78rem; }
+
+/* Exam name */
+.teacher-timetable .tt-exam-name {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Today row */
+.teacher-timetable .tt-row-today td {
+  background: #fffbeb;
+}
+
+.teacher-timetable .tt-row-today:hover td {
+  background: #fef3c7;
+}
+
+/* Today badge */
+.teacher-timetable .tt-today-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+  color: #d97706;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-right: 6px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .teacher-timetable .tt-filter-form {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .teacher-timetable .tt-section-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .teacher-timetable .tt-filter-form {
+    width: 100%;
+  }
+
+  .teacher-timetable .tt-select {
+    flex: 1;
+  }
+
+  .teacher-timetable .tt-exam-total-badge {
+    margin-left: 0;
+  }
+}

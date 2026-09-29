@@ -1,0 +1,232 @@
+/* Admin Classes */
+
+.admin-classes .ac-setup-flow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.admin-classes .ac-setup-step {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.admin-classes .ac-setup-step.active { border-color: #3b82f6; background: #eff6ff; color: #1d4ed8; }
+.admin-classes .ac-setup-step.done   { border-color: #86efac; background: #f0fdf4; color: #16a34a; }
+
+.admin-classes .ac-step-num {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  color: #fff;
+  font-size: 0.72rem;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; flex-shrink: 0;
+}
+
+.admin-classes .ac-setup-step.active .ac-step-num { background: #1d4ed8; }
+.admin-classes .ac-setup-step.done   .ac-step-num { background: #16a34a; }
+.admin-classes .ac-step-check { color: #16a34a; font-size: 0.8rem; }
+.admin-classes .ac-setup-arrow { color: #cbd5e1; font-size: 0.75rem; }
+
+.admin-classes .ac-step-link {
+  color: #2563eb; font-size: 0.78rem;
+  text-decoration: none; font-weight: 700; margin-left: 4px;
+}
+
+.admin-classes .ac-topbar {
+  display: flex; justify-content: space-between;
+  align-items: center; margin-bottom: 24px;
+}
+
+.admin-classes .ac-topbar-left { display: flex; align-items: center; gap: 10px; }
+
+.admin-classes .ac-title {
+  margin: 0; font-size: 1.35rem; font-weight: 700;
+  color: #0f172a; letter-spacing: -0.01em;
+}
+
+.admin-classes .ac-count-badge {
+  min-width: 26px; height: 26px; padding: 0 8px;
+  border-radius: 6px; background: #f1f5f9;
+  border: 1px solid #e2e8f0; font-size: 0.8rem;
+  font-weight: 700; color: #475569;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+
+.admin-classes .ac-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 20px; align-items: start;
+}
+
+.admin-classes .ac-form-card { border: 1px solid #e2e8f0; box-shadow: none; padding: 20px; }
+
+.admin-classes .ac-form-head {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 20px; padding-bottom: 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.admin-classes .ac-form-icon {
+  width: 36px; height: 36px; border-radius: 8px;
+  background: #eff6ff; border: 1px solid #bfdbfe;
+  color: #2563eb; display: flex; align-items: center;
+  justify-content: center; font-size: 0.9rem; flex-shrink: 0;
+}
+
+.admin-classes .ac-form-title { font-size: 0.95rem; font-weight: 700; color: #0f172a; }
+.admin-classes .ac-form-sub   { font-size: 0.75rem; color: #64748b; margin-top: 2px; }
+
+.admin-classes .input-group { margin-bottom: 14px; }
+
+.admin-classes .input-group label {
+  display: block; font-size: 0.8rem; font-weight: 600;
+  color: #374151; margin-bottom: 5px;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+
+.admin-classes .input-group input {
+  width: 100%; padding: 9px 12px;
+  border: 1px solid #d1d5db; border-radius: 7px;
+  font-size: 0.88rem; color: #1f2a37;
+  background: #fff; outline: none; box-sizing: border-box;
+}
+
+.admin-classes .input-group input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,.1);
+}
+
+.admin-classes .ac-preview {
+  padding: 8px 12px; background: #f0fdf4;
+  border: 1px solid #bbf7d0; border-radius: 7px;
+  font-size: 0.82rem; color: #166534; margin-bottom: 14px;
+}
+
+.admin-classes .ac-add-btn {
+  width: 100%; padding: 11px; background: #1d4ed8;
+  color: #fff; border: none; border-radius: 8px;
+  font-size: 0.9rem; font-weight: 700; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+
+.admin-classes .ac-add-btn:hover { background: #1e40af; }
+
+.admin-classes .ac-quick-card { border: 1px solid #e2e8f0; box-shadow: none; padding: 16px 20px; }
+
+.admin-classes .ac-quick-head {
+  font-size: 0.82rem; font-weight: 700; color: #475569;
+  text-transform: uppercase; letter-spacing: 0.05em;
+  margin-bottom: 12px; display: flex; align-items: center; gap: 6px;
+}
+
+.admin-classes .ac-quick-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.admin-classes .ac-quick-btn {
+  padding: 6px 14px; border-radius: 6px;
+  border: 1px solid #d1d5db; background: #fff;
+  color: #374151; font-size: 0.82rem; font-weight: 600;
+  cursor: pointer; display: inline-flex; align-items: center; gap: 5px;
+}
+
+.admin-classes .ac-quick-btn:hover:not(:disabled) {
+  background: #eff6ff; border-color: #93c5fd; color: #1d4ed8;
+}
+
+.admin-classes .ac-quick-exists {
+  background: #f0fdf4; border-color: #86efac;
+  color: #16a34a; cursor: not-allowed; opacity: 0.7;
+}
+
+.admin-classes .ac-list-card { border: 1px solid #e2e8f0; box-shadow: none; padding: 20px; }
+
+.admin-classes .ac-list-head {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 16px; padding-bottom: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.admin-classes .ac-list-icon {
+  width: 30px; height: 30px; border-radius: 7px;
+  background: #f8fafc; border: 1px solid #e2e8f0;
+  color: #475569; display: flex; align-items: center;
+  justify-content: center; font-size: 0.82rem;
+}
+
+.admin-classes .ac-list-title { font-size: 0.95rem; font-weight: 700; color: #0f172a; }
+
+.admin-classes .ac-empty { text-align: center; padding: 48px 20px; color: #94a3b8; }
+.admin-classes .ac-empty i { font-size: 2.5rem; display: block; margin-bottom: 12px; opacity: 0.35; }
+.admin-classes .ac-empty p { margin: 0; font-size: 0.9rem; line-height: 1.6; }
+
+.admin-classes .ac-table-wrap { overflow-x: auto; }
+
+.admin-classes .ac-table th {
+  font-size: 0.75rem; text-transform: uppercase;
+  letter-spacing: 0.05em; color: #64748b;
+  background: #f8fafc; padding: 10px 12px;
+}
+
+.admin-classes .ac-table td { padding: 12px; vertical-align: middle; }
+.admin-classes .ac-table tbody tr:hover td { background: #f8fafc; }
+.admin-classes .ac-num { font-size: 0.78rem; color: #94a3b8; font-weight: 600; }
+
+.admin-classes .ac-class-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 12px; border-radius: 6px;
+  background: #eff6ff; border: 1px solid #bfdbfe;
+  color: #1d4ed8; font-size: 0.85rem; font-weight: 700;
+}
+
+.admin-classes .ac-subject-count {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 0.82rem; color: #7c3aed;
+  font-weight: 600; text-decoration: none;
+}
+
+.admin-classes .ac-subject-count:hover { color: #5b21b6; }
+
+.admin-classes .ac-add-hint {
+  font-size: 0.72rem; color: #f59e0b; font-weight: 700;
+  background: #fef3c7; border-radius: 4px; padding: 1px 5px;
+}
+
+.admin-classes .ac-student-count {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 0.82rem; color: #475569; font-weight: 600;
+}
+
+.admin-classes .ac-del-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 6px;
+  background: #fff; color: #dc2626;
+  border: 1px solid #fecaca; text-decoration: none; font-size: 0.8rem;
+}
+
+.admin-classes .ac-del-btn:hover { background: #fee2e2; }
+
+.admin-classes .ac-del-disabled {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 6px;
+  background: #f8fafc; color: #cbd5e1;
+  border: 1px solid #e2e8f0; font-size: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .admin-classes .ac-layout { grid-template-columns: 1fr; }
+}

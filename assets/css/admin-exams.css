@@ -1,0 +1,158 @@
+/* Admin Exam Timetable */
+
+.admin-exams .et-topbar {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 24px;
+}
+
+.admin-exams .et-title {
+  margin: 0; font-size: 1.35rem; font-weight: 700; color: #0f172a;
+}
+
+.admin-exams .et-badge {
+  background: #f1f5f9; border: 1px solid #e2e8f0;
+  color: #475569; font-size: 0.8rem; font-weight: 700;
+  padding: 3px 10px; border-radius: 6px;
+}
+
+/* Layout */
+.admin-exams .et-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 20px; align-items: start;
+}
+
+/* Form card */
+.admin-exams .et-form-card { border: 1px solid #e2e8f0; box-shadow: none; padding: 20px; }
+
+.admin-exams .et-form-head {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 20px; padding-bottom: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.admin-exams .et-form-icon {
+  width: 36px; height: 36px; border-radius: 8px;
+  background: #fef3c7; border: 1px solid #fde68a;
+  color: #d97706; display: flex; align-items: center;
+  justify-content: center; font-size: 0.95rem; flex-shrink: 0;
+}
+
+.admin-exams .et-form-title { font-size: 0.95rem; font-weight: 700; color: #0f172a; }
+.admin-exams .et-form-sub   { font-size: 0.75rem; color: #64748b; margin-top: 2px; }
+
+.admin-exams .input-group { margin-bottom: 14px; }
+
+.admin-exams .input-group label {
+  display: block; font-size: 0.8rem; font-weight: 600;
+  color: #374151; margin-bottom: 5px;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+
+.admin-exams .input-group { margin-bottom: 14px; }
+
+.admin-exams .et-time-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+}
+
+.admin-exams .et-add-btn {
+  width: 100%; padding: 11px; background: #d97706;
+  color: #fff; border: none; border-radius: 8px;
+  font-size: 0.9rem; font-weight: 700; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  margin-top: 4px;
+}
+
+.admin-exams .et-add-btn:hover { background: #b45309; }
+
+.admin-exams .et-warn {
+  padding: 12px 14px; background: #fffbeb;
+  border: 1px solid #fde68a; border-radius: 8px;
+  font-size: 0.85rem; color: #92400e;
+  display: flex; align-items: center; gap: 8px;
+}
+
+.admin-exams .et-warn a { color: #1d4ed8; font-weight: 700; text-decoration: none; }
+
+/* List */
+.admin-exams .et-empty {
+  text-align: center; padding: 48px 20px; color: #94a3b8;
+}
+
+.admin-exams .et-empty i {
+  font-size: 2.5rem; display: block; margin-bottom: 12px; opacity: 0.35;
+}
+
+.admin-exams .et-empty p { margin: 0; font-size: 0.9rem; line-height: 1.6; }
+
+.admin-exams .et-class-card {
+  border: 1px solid #e2e8f0; box-shadow: none;
+  padding: 18px 20px; margin-bottom: 16px;
+}
+
+.admin-exams .et-class-head {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 14px; padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.admin-exams .et-class-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: #eff6ff; border: 1px solid #bfdbfe;
+  color: #1d4ed8; padding: 5px 14px;
+  border-radius: 7px; font-weight: 700; font-size: 0.88rem;
+}
+
+.admin-exams .et-class-count {
+  font-size: 0.8rem; color: #94a3b8; font-weight: 600;
+}
+
+.admin-exams .et-table-wrap { overflow-x: auto; }
+
+.admin-exams .et-table th {
+  font-size: 0.75rem; text-transform: uppercase;
+  letter-spacing: 0.05em; color: #64748b;
+  background: #f8fafc; padding: 10px 12px;
+}
+
+.admin-exams .et-table td { padding: 11px 12px; vertical-align: middle; }
+.admin-exams .et-table tbody tr:hover td { background: #f8fafc; }
+
+.admin-exams .et-exam-name {
+  display: flex; align-items: center; gap: 7px;
+  font-weight: 600; color: #0f172a; font-size: 0.88rem;
+}
+
+.admin-exams .et-exam-name i { color: #d97706; }
+
+.admin-exams .et-subject-badge {
+  display: inline-block; padding: 3px 10px;
+  background: #f3e8ff; border-radius: 20px;
+  color: #7c3aed; font-size: 0.8rem; font-weight: 600;
+}
+
+.admin-exams .et-date {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 0.85rem; color: #374151;
+}
+
+.admin-exams .et-date i { color: #3b82f6; }
+
+.admin-exams .et-time {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 0.85rem; color: #374151; white-space: nowrap;
+}
+
+.admin-exams .et-time i { color: #10b981; }
+
+.admin-exams .et-del-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 6px;
+  background: #fff; color: #dc2626;
+  border: 1px solid #fecaca; text-decoration: none; font-size: 0.8rem;
+}
+
+.admin-exams .et-del-btn:hover { background: #fee2e2; }
+
+@media (max-width: 1100px) {
+  .admin-exams .et-layout { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#1e3a8a"/>
+
+  <!-- Graduation cap board (flat top) -->
+  <polygon points="32,12 56,22 32,32 8,22" fill="#ffffff"/>
+
+  <!-- Cap top shine -->
+  <polygon points="32,12 56,22 32,32 8,22" fill="url(#capGrad)"/>
+
+  <!-- Cap stem -->
+  <rect x="30" y="30" width="4" height="12" rx="2" fill="#ffffff"/>
+
+  <!-- Tassel circle -->
+  <circle cx="32" cy="44" r="3.5" fill="#fbbf24"/>
+
+  <!-- Book (bottom left) -->
+  <rect x="10" y="38" width="16" height="12" rx="2" fill="#3b82f6"/>
+  <rect x="17" y="38" width="2" height="12" fill="#1e40af"/>
+  <rect x="11" y="41" width="5" height="1.5" rx="0.5" fill="#93c5fd"/>
+  <rect x="11" y="44" width="5" height="1.5" rx="0.5" fill="#93c5fd"/>
+
+  <!-- Star (top right) -->
+  <polygon points="50,10 51.8,15.5 57.5,15.5 53,18.8 54.8,24.3 50,21 45.2,24.3 47,18.8 42.5,15.5 48.2,15.5"
+           fill="#fbbf24"/>
+
+  <!-- Letter D in center-bottom -->
+  <text x="32" y="58" text-anchor="middle" font-family="Arial Black, sans-serif"
+        font-size="10" font-weight="900" fill="#fbbf24" letter-spacing="1">DSMS</text>
+
+  <defs>
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+</svg>

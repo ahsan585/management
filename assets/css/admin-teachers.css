@@ -1,0 +1,8 @@
+/* Admin Teachers — uses shared styles from admin-students.css */
+/* All shared styles (.as-*) are defined in admin-students.css */
+/* This file is kept for any teacher-specific overrides */
+
+.admin-teachers .as-head-icon.icon-list {
+  background: #f3e8ff;
+  color: #9333ea;
+}

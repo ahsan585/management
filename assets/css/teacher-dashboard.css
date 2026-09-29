@@ -1,0 +1,103 @@
+/* Teacher Dashboard */
+
+.teacher-dashboard .stat-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.teacher-dashboard .stat-card {
+  padding: 20px 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.07);
+  background: #fff;
+}
+
+.teacher-dashboard .stat-card .stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.teacher-dashboard .stat-card.classes  { background: #dcfce7; }
+.teacher-dashboard .stat-card.notes    { background: #f3e8ff; }
+.teacher-dashboard .stat-card.exams    { background: #dbeafe; }
+.teacher-dashboard .stat-card.notices  { background: #ffedd5; }
+
+.teacher-dashboard .stat-card.classes  .stat-icon { background: #16a34a; color: #fff; }
+.teacher-dashboard .stat-card.notes    .stat-icon { background: #9333ea; color: #fff; }
+.teacher-dashboard .stat-card.exams    .stat-icon { background: #2563eb; color: #fff; }
+.teacher-dashboard .stat-card.notices  .stat-icon { background: #ea580c; color: #fff; }
+
+.teacher-dashboard .stat-card.classes  strong,
+.teacher-dashboard .stat-card.classes  .stat-label { color: #14532d; }
+.teacher-dashboard .stat-card.notes    strong,
+.teacher-dashboard .stat-card.notes    .stat-label { color: #581c87; }
+.teacher-dashboard .stat-card.exams    strong,
+.teacher-dashboard .stat-card.exams    .stat-label { color: #1e3a8a; }
+.teacher-dashboard .stat-card.notices  strong,
+.teacher-dashboard .stat-card.notices  .stat-label { color: #7c2d12; }
+
+.teacher-dashboard .stat-card strong {
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.teacher-dashboard .stat-card .stat-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.teacher-dashboard .chart-card {
+  margin-bottom: 20px;
+}
+
+.teacher-dashboard .chart-card h3 {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.teacher-dashboard .chart-card canvas {
+  width: 100% !important;
+  height: 260px !important;
+}
+
+/* Profile row */
+.teacher-dashboard .profile-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.teacher-dashboard .profile-row .avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #e2e8f0;
+  flex-shrink: 0;
+}
+
+.teacher-dashboard .profile-row .profile-info strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 900px) {
+  .teacher-dashboard .stat-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .teacher-dashboard .stat-cards { grid-template-columns: 1fr 1fr; }
+}

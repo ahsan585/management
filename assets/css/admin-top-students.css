@@ -1,0 +1,100 @@
+/* Admin Top Students */
+
+.admin-top .top-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.admin-top .top-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fafbfc;
+}
+
+.admin-top .top-rank {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.admin-top .top-card:first-child .top-rank { background: #fef9c3; color: #ca8a04; }
+.admin-top .top-card:nth-child(2) .top-rank { background: #f1f5f9; color: #64748b; }
+.admin-top .top-card:nth-child(3) .top-rank { background: #ffedd5; color: #ea580c; }
+
+.admin-top .top-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #e2e8f0;
+  flex-shrink: 0;
+}
+
+.admin-top .top-info { flex: 1; min-width: 0; }
+
+.admin-top .top-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1f2a37;
+  margin-bottom: 4px;
+}
+
+.admin-top .top-meta {
+  display: flex;
+  gap: 14px;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.admin-top .top-meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.admin-top .top-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.admin-top .top-grade {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.admin-top .top-pct {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .admin-top .top-meta { flex-direction: column; gap: 4px; }
+  .admin-top .top-card { flex-wrap: wrap; }
+  .admin-top .top-right { flex-direction: row; align-items: center; gap: 8px; }
+}
+
+@media (max-width: 640px) {
+  .admin-top .top-card { flex-wrap: wrap; gap: 10px; }
+  .admin-top .top-right { margin-left: auto; }
+}

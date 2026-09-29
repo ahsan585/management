@@ -1,0 +1,227 @@
+/* Teacher ID Card */
+
+.teacher-idcard .idcard-page {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 30px;
+}
+
+.teacher-idcard .idcard-wrap {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Card container */
+.teacher-idcard .idcard {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 24px rgba(0,0,0,.1);
+  background: #fff;
+}
+
+/* Top header */
+.teacher-idcard .idcard-top {
+  background: linear-gradient(135deg, #0369a1 0%, #0ea5e9 100%);
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.teacher-idcard .idcard-school-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.teacher-idcard .idcard-school-info { flex: 1; }
+
+.teacher-idcard .idcard-school-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.teacher-idcard .idcard-school-sub {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.75);
+  margin-top: 2px;
+}
+
+.teacher-idcard .idcard-role-badge {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Divider */
+.teacher-idcard .idcard-divider {
+  height: 4px;
+  background: linear-gradient(90deg, #0369a1, #0ea5e9, #38bdf8);
+}
+
+/* Body */
+.teacher-idcard .idcard-body {
+  display: flex;
+  gap: 20px;
+  padding: 22px 20px;
+  align-items: flex-start;
+}
+
+.teacher-idcard .idcard-photo-col {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.teacher-idcard .idcard-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid #e2e8f0;
+  display: block;
+}
+
+.teacher-idcard .idcard-photo-label {
+  font-size: 0.68rem;
+  color: #94a3b8;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.teacher-idcard .idcard-info-col { flex: 1; min-width: 0; }
+
+.teacher-idcard .idcard-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2px;
+}
+
+.teacher-idcard .idcard-designation {
+  font-size: 0.8rem;
+  color: #0369a1;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.teacher-idcard .idcard-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.teacher-idcard .idcard-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.83rem;
+}
+
+.teacher-idcard .idcard-row:last-child { border-bottom: none; }
+
+.teacher-idcard .idcard-label { color: #64748b; font-weight: 500; }
+.teacher-idcard .idcard-value { font-weight: 600; color: #1f2a37; }
+.teacher-idcard .id-mono {
+  font-family: monospace;
+  font-size: 0.9rem;
+  background: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: #0369a1;
+}
+
+/* Footer */
+.teacher-idcard .idcard-footer {
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacher-idcard .idcard-barcode {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 28px;
+  margin-bottom: 4px;
+}
+
+.teacher-idcard .idcard-barcode span {
+  display: inline-block;
+  height: 100%;
+  background: #334155;
+  border-radius: 1px;
+}
+
+.teacher-idcard .idcard-barcode span:nth-child(even) { height: 70%; }
+
+.teacher-idcard .idcard-barcode-num {
+  font-family: monospace;
+  font-size: 0.68rem;
+  color: #64748b;
+  letter-spacing: 0.1em;
+}
+
+.teacher-idcard .idcard-footer-right { text-align: right; }
+
+.teacher-idcard .idcard-issued {
+  font-size: 0.72rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.teacher-idcard .idcard-valid {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+/* Print button */
+.teacher-idcard .topbar .btn {
+  background: #0369a1;
+  color: #fff;
+}
+
+.teacher-idcard .topbar .btn:hover { background: #0284c7; }
+
+/* Print styles */
+@media print {
+  .sidebar, .topbar, .sb-footer { display: none !important; }
+  .main { margin-left: 0 !important; padding: 0 !important; }
+  .teacher-idcard .idcard-page { padding: 0; }
+  .teacher-idcard .idcard { box-shadow: none; border: 1px solid #ccc; }
+}
+
+@media (max-width: 520px) {
+  .teacher-idcard .idcard-body { flex-direction: column; align-items: center; }
+  .teacher-idcard .idcard-info-col { width: 100%; }
+  .teacher-idcard .idcard-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
+  .teacher-idcard .idcard-footer-right { text-align: left; }
+}
+
+@media (max-width: 640px) {
+  .teacher-idcard .idcard-body { flex-direction: column; align-items: center; }
+  .teacher-idcard .idcard-info-col { width: 100%; }
+  .teacher-idcard .idcard-footer { flex-direction: column; gap: 10px; }
+  .teacher-idcard .idcard-footer-right { text-align: left; }
+}

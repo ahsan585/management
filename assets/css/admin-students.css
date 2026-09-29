@@ -1,0 +1,291 @@
+/* Admin Students & Teachers — shared pro layout */
+
+/* Topbar count badge */
+.admin-students .count-badge,
+.admin-teachers .count-badge {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #475569;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+/* Alerts */
+.as-alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.as-success {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #16a34a;
+}
+
+.as-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+}
+
+/* 2-column layout */
+.as-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Card header row */
+.as-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.as-card-head h3 { margin: 0; font-size: 1rem; font-weight: 600; }
+
+.as-head-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.icon-add  { background: #dbeafe; color: #2563eb; }
+.icon-edit { background: #fef9c3; color: #ca8a04; }
+.icon-list { background: #dcfce7; color: #16a34a; }
+
+/* Form rows */
+.as-form-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 0;
+}
+
+.as-form-row .input-group { flex: 1; }
+
+/* Optional label */
+.as-optional {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #94a3b8;
+  margin-left: 4px;
+}
+
+/* Inputs — inherit from base.css */
+
+/* File upload */
+.as-file-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 2px dashed #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #64748b;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.as-file-label:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.as-file-label input[type="file"] {
+  display: none;
+}
+
+.as-file-label i { font-size: 1.1rem; }
+
+/* Photo preview */
+.as-preview-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-top: 10px;
+  border: 2px solid #e2e8f0;
+}
+
+/* Form actions */
+.as-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.as-btn-submit {
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.as-btn-submit:hover { background: #1d4ed8; }
+
+.as-btn-cancel {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+.as-btn-cancel:hover { background: #e2e8f0; }
+
+/* Table wrap */
+.as-table-wrap { overflow-x: auto; }
+
+/* Table */
+.admin-students .table th,
+.admin-teachers .table th {
+  background: #f8fafc;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  font-weight: 600;
+  padding: 10px 12px;
+}
+
+.admin-students .table td,
+.admin-teachers .table td {
+  padding: 10px 12px;
+  vertical-align: middle;
+}
+
+.admin-students .table tr:hover td,
+.admin-teachers .table tr:hover td { background: #f8fafc; }
+
+/* Student/teacher cell with avatar */
+.as-student-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.as-row-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #e2e8f0;
+  flex-shrink: 0;
+}
+
+.as-row-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1f2a37;
+}
+
+.as-row-sub {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+/* Class badge */
+.as-class-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+/* Login ID code */
+.as-key-code {
+  font-family: monospace;
+  font-size: 0.85rem;
+  background: #f1f5f9;
+  padding: 3px 8px;
+  border-radius: 6px;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+}
+
+/* Row action buttons */
+.as-row-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.as-btn-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.as-btn-icon.as-edit   { background: #dbeafe; color: #2563eb; }
+.as-btn-icon.as-edit:hover   { background: #bfdbfe; }
+.as-btn-icon.as-delete { background: #fee2e2; color: #dc2626; }
+.as-btn-icon.as-delete:hover { background: #fecaca; }
+
+/* Empty state */
+.as-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #94a3b8;
+}
+
+.as-empty i { font-size: 2.5rem; margin-bottom: 10px; opacity: 0.4; }
+.as-empty p { margin: 0; font-size: 0.9rem; }
+
+@media (max-width: 1100px) {
+  .as-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .as-form-row { flex-direction: column; gap: 0; }
+  .as-form-actions { flex-direction: column; }
+  .as-btn-submit, .as-btn-cancel { width: 100%; justify-content: center; }
+  .as-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .admin-students .table, .admin-teachers .table { min-width: 500px; }
+}
+
+/* Info note */
+.as-info-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  font-size: 0.83rem;
+  color: #1e40af;
+  line-height: 1.5;
+}
+
+.as-info-note i { font-size: 0.85rem; margin-top: 1px; flex-shrink: 0; }

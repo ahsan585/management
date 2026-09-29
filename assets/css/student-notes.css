@@ -1,0 +1,148 @@
+/* Student Notes */
+
+.student-notes .sn-topbar { display:flex; align-items:center; margin-bottom:20px; }
+.student-notes .sn-topbar-left { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.student-notes .sn-title { margin:0; font-size:1.35rem; font-weight:700; color:#0f172a; letter-spacing:-0.01em; }
+
+.student-notes .sn-class-badge {
+  display:inline-flex; align-items:center; gap:5px;
+  padding:3px 10px; border-radius:6px;
+  background:#eff6ff; border:1px solid #bfdbfe;
+  font-size:0.78rem; font-weight:700; color:#1d4ed8;
+}
+
+.student-notes .sn-count-badge {
+  display:inline-flex; align-items:center;
+  padding:3px 10px; border-radius:6px;
+  background:#f1f5f9; border:1px solid #e2e8f0;
+  font-size:0.78rem; font-weight:700; color:#475569;
+}
+
+/* Card */
+.student-notes .sn-card {
+  background:#fff; border:1px solid #e2e8f0;
+  border-radius:12px; padding:20px;
+}
+
+.student-notes .sn-card-head {
+  display:flex; align-items:center; gap:12px;
+  margin-bottom:20px; padding-bottom:16px;
+  border-bottom:1px solid #f1f5f9; flex-wrap:wrap;
+}
+
+.student-notes .sn-head-icon {
+  width:36px; height:36px; border-radius:9px;
+  background:#dcfce7; border:1px solid #bbf7d0; color:#16a34a;
+  display:flex; align-items:center; justify-content:center;
+  font-size:0.9rem; flex-shrink:0;
+}
+
+.student-notes .sn-head-title { font-size:0.95rem; font-weight:700; color:#0f172a; }
+
+/* Filters */
+.student-notes .sn-filters { margin-left:auto; display:flex; align-items:center; gap:8px; }
+.student-notes .sn-filters form { display:flex; align-items:center; gap:8px; }
+
+.student-notes .sn-select {
+  padding:7px 10px; border:1px solid #d1d5db; border-radius:7px;
+  font-size:0.83rem; color:#374151; background:#fff; outline:none; cursor:pointer;
+}
+.student-notes .sn-select:focus { border-color:#3b82f6; }
+
+.student-notes .sn-clear-btn {
+  display:inline-flex; align-items:center; gap:5px;
+  padding:7px 12px; border:1px solid #e2e8f0; border-radius:7px;
+  font-size:0.82rem; color:#475569; background:#f8fafc;
+  text-decoration:none; font-weight:500; white-space:nowrap;
+}
+.student-notes .sn-clear-btn:hover { background:#f1f5f9; }
+
+/* Empty */
+.student-notes .sn-empty { text-align:center; padding:52px 20px; color:#94a3b8; }
+.student-notes .sn-empty i { font-size:2.8rem; display:block; margin-bottom:12px; opacity:0.3; }
+.student-notes .sn-empty p { margin:0; font-size:0.9rem; }
+
+/* Subject group */
+.student-notes .sn-subject-group { margin-bottom:24px; }
+
+.student-notes .sn-subject-label {
+  display:flex; align-items:center; gap:8px;
+  font-size:0.8rem; font-weight:700; text-transform:uppercase;
+  letter-spacing:0.06em; color:#1d4ed8;
+  padding-bottom:8px; border-bottom:2px solid #e2e8f0; margin-bottom:12px;
+}
+
+.student-notes .sn-subject-count {
+  margin-left:auto; background:#eff6ff; border:1px solid #bfdbfe;
+  color:#1d4ed8; font-size:0.7rem; padding:1px 8px;
+  border-radius:20px; font-weight:700;
+}
+
+/* Note rows */
+.student-notes .sn-note-list { display:flex; flex-direction:column; gap:7px; }
+
+.student-notes .sn-note-row {
+  display:flex; align-items:center; gap:12px;
+  padding:11px 13px; border-radius:9px;
+  background:#f8fafc; border:1px solid #e2e8f0;
+}
+.student-notes .sn-note-row:hover { background:#f1f5f9; border-color:#cbd5e1; }
+
+.student-notes .sn-note-icon {
+  flex-shrink:0; width:36px; height:36px; border-radius:8px;
+  display:flex; align-items:center; justify-content:center; font-size:1.1rem;
+}
+
+.student-notes .sn-note-info { flex:1; min-width:0; }
+
+.student-notes .sn-note-title {
+  font-weight:600; font-size:0.9rem; color:#0f172a;
+  margin-bottom:4px; white-space:nowrap;
+  overflow:hidden; text-overflow:ellipsis;
+}
+
+.student-notes .sn-note-meta {
+  display:flex; align-items:center; gap:12px;
+  font-size:0.74rem; color:#94a3b8; flex-wrap:wrap;
+}
+.student-notes .sn-note-meta span { display:inline-flex; align-items:center; gap:4px; }
+
+/* Ext badge */
+.student-notes .sn-ext-badge {
+  padding:1px 7px; border-radius:4px;
+  font-size:0.68rem; font-weight:800; letter-spacing:0.04em;
+}
+.student-notes .sn-ext-badge.pdf { background:#fee2e2; color:#dc2626; }
+.student-notes .sn-ext-badge.img { background:#dbeafe; color:#2563eb; }
+
+/* Actions */
+.student-notes .sn-note-actions { display:flex; align-items:center; gap:6px; flex-shrink:0; }
+
+.student-notes .sn-btn {
+  display:inline-flex; align-items:center; justify-content:center;
+  border-radius:6px; font-size:0.8rem; font-weight:600;
+  text-decoration:none; border:1px solid transparent; white-space:nowrap;
+}
+
+.student-notes .sn-btn-view {
+  gap:5px; padding:5px 12px;
+  background:#3b82f6; color:#fff; border-color:#3b82f6;
+}
+.student-notes .sn-btn-view:hover { background:#2563eb; border-color:#2563eb; }
+
+.student-notes .sn-btn-dl {
+  width:30px; height:30px;
+  background:#f0fdf4; color:#16a34a; border-color:#bbf7d0;
+}
+.student-notes .sn-btn-dl:hover { background:#dcfce7; }
+
+/* Responsive */
+@media (max-width:640px) {
+  .student-notes .sn-card-head { flex-direction:column; align-items:flex-start; }
+  .student-notes .sn-filters   { width:100%; }
+  .student-notes .sn-filters form { width:100%; }
+  .student-notes .sn-select    { flex:1; }
+  .student-notes .sn-note-title { white-space:normal; }
+  .student-notes .sn-btn-view  { padding:5px 8px; font-size:0; }
+  .student-notes .sn-btn-view i { font-size:0.85rem; }
+}

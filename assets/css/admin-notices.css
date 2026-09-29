@@ -1,0 +1,379 @@
+/* Admin Notices — Pro Design (no gradients, no transitions) */
+
+/* ── Topbar ── */
+.admin-notices .an-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.admin-notices .an-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-notices .an-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+.admin-notices .an-count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  height: 26px;
+  padding: 0 8px;
+  border-radius: 6px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+/* ── Layout ── */
+.admin-notices .an-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* ── Form Card ── */
+.admin-notices .an-form-card {
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: none;
+}
+
+.admin-notices .an-form-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.admin-notices .an-form-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.admin-notices .an-form-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.admin-notices .an-form-sub {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-top: 1px;
+}
+
+/* Form inputs */
+.admin-notices .input-group {
+  margin-bottom: 14px;
+}
+
+.admin-notices .input-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.admin-notices .input-group input,
+.admin-notices .input-group select,
+.admin-notices .input-group textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 0.88rem;
+  color: #1f2a37;
+  background: #fff;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.admin-notices .input-group input:focus,
+.admin-notices .input-group select:focus,
+.admin-notices .input-group textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,.1);
+}
+
+.admin-notices .input-group textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+.admin-notices .an-publish-btn {
+  width: 100%;
+  padding: 11px;
+  background: #1d4ed8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.admin-notices .an-publish-btn:hover {
+  background: #1e40af;
+}
+
+/* ── List Card ── */
+.admin-notices .an-list-card {
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: none;
+}
+
+.admin-notices .an-list-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.admin-notices .an-list-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+}
+
+.admin-notices .an-list-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ── Empty ── */
+.admin-notices .an-empty {
+  text-align: center;
+  padding: 48px 20px;
+  color: #94a3b8;
+}
+
+.admin-notices .an-empty i {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  display: block;
+  opacity: 0.4;
+}
+
+.admin-notices .an-empty p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ── Notice Cards ── */
+.admin-notices .an-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-notices .an-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.admin-notices .an-card--read {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+}
+
+/* Card header */
+.admin-notices .an-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.admin-notices .an-card-title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.admin-notices .an-card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Card — all read state */
+.admin-notices .an-card--read {
+  border-color: #bfdbfe;
+}
+
+/* Target badge */
+.admin-notices .an-target-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.admin-notices .an-target-all      { background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; }
+.admin-notices .an-target-students { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+.admin-notices .an-target-teachers { background: #faf5ff; color: #6b21a8; border: 1px solid #e9d5ff; }
+
+/* Message */
+.admin-notices .an-card-msg {
+  margin: 0 0 12px;
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.55;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+/* Footer */
+.admin-notices .an-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.admin-notices .an-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.78rem;
+  color: #64748b;
+  flex-wrap: wrap;
+}
+
+.admin-notices .an-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.admin-notices .an-meta i {
+  font-size: 0.72rem;
+  opacity: 0.7;
+}
+
+/* Footer right: ticks + delete */
+.admin-notices .an-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* WhatsApp-style double tick */
+.admin-notices .an-ticks {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: default;
+}
+
+.admin-notices .an-tick-svg {
+  width: 22px;
+  height: 11px;
+  display: block;
+}
+
+.admin-notices .an-read-count {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.admin-notices .an-ticks--2 .an-read-count {
+  color: #2563eb;
+}
+
+/* Delete button */
+.admin-notices .an-delete-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background: #fff;
+  color: #dc2626;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border: 1px solid #fecaca;
+}
+
+.admin-notices .an-delete-btn:hover {
+  background: #fee2e2;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+  .admin-notices .an-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .admin-notices .an-card-header { flex-direction: column; gap: 6px; }
+  .admin-notices .an-card-footer { flex-direction: column; align-items: flex-start; }
+  .admin-notices .an-meta { gap: 8px; }
+}

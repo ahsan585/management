@@ -1,0 +1,282 @@
+/* ============================================
+   Admin Panel — Pro Button System
+   No animations, clean & consistent
+   ============================================ */
+
+/* ── Primary (Blue) ── */
+.admin-students .btn,
+.admin-teachers .btn,
+.admin-notices .btn,
+.admin-notes .btn,
+.admin-attendance .btn,
+.admin-timetable .btn,
+.admin-exams .btn,
+.admin-subjects .btn,
+.admin-top .btn,
+.admin-dashboard .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  background: #2563eb;
+  color: #fff;
+}
+
+.admin-students .btn:hover,
+.admin-teachers .btn:hover,
+.admin-notices .btn:hover,
+.admin-notes .btn:hover,
+.admin-attendance .btn:hover,
+.admin-timetable .btn:hover,
+.admin-exams .btn:hover,
+.admin-subjects .btn:hover,
+.admin-top .btn:hover,
+.admin-dashboard .btn:hover {
+  background: #1d4ed8;
+}
+
+/* ── Outline (secondary) ── */
+.admin-students .btn.outline,
+.admin-teachers .btn.outline,
+.admin-notices .btn.outline,
+.admin-notes .btn.outline,
+.admin-attendance .btn.outline,
+.admin-timetable .btn.outline,
+.admin-exams .btn.outline,
+.admin-subjects .btn.outline {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.admin-students .btn.outline:hover,
+.admin-teachers .btn.outline:hover,
+.admin-notices .btn.outline:hover,
+.admin-notes .btn.outline:hover,
+.admin-attendance .btn.outline:hover,
+.admin-timetable .btn.outline:hover,
+.admin-exams .btn.outline:hover,
+.admin-subjects .btn.outline:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+/* ── Edit (Blue soft) ── */
+.btn.edit-btn,
+.admin-students .btn.edit-btn,
+.admin-teachers .btn.edit-btn,
+.admin-exams .btn.edit-btn {
+  background: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+}
+
+.btn.edit-btn:hover,
+.admin-students .btn.edit-btn:hover,
+.admin-teachers .btn.edit-btn:hover,
+.admin-exams .btn.edit-btn:hover {
+  background: #bfdbfe;
+  border-color: #93c5fd;
+}
+
+/* ── Delete (Red soft) ── */
+.btn.delete-btn,
+.admin-students .btn.delete-btn,
+.admin-teachers .btn.delete-btn,
+.admin-exams .btn.delete-btn,
+.admin-notices .btn.delete-btn,
+.admin-notes .btn.delete-btn,
+.admin-subjects .btn.delete-btn {
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+}
+
+.btn.delete-btn:hover,
+.admin-students .btn.delete-btn:hover,
+.admin-teachers .btn.delete-btn:hover,
+.admin-exams .btn.delete-btn:hover,
+.admin-notices .btn.delete-btn:hover,
+.admin-notes .btn.delete-btn:hover,
+.admin-subjects .btn.delete-btn:hover {
+  background: #fecaca;
+  border-color: #fca5a5;
+}
+
+/* ── Save / Submit (full width) ── */
+.pro-btn-full,
+.as-btn-submit {
+  background: #2563eb;
+  color: #fff;
+  border: 1px solid transparent;
+  width: 100%;
+  justify-content: center;
+  padding: 11px 20px;
+  font-size: 0.92rem;
+}
+
+.pro-btn-full:hover,
+.as-btn-submit:hover {
+  background: #1d4ed8;
+}
+
+/* ── Cancel ── */
+.as-btn-cancel {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  padding: 11px 20px;
+  font-size: 0.92rem;
+}
+
+.as-btn-cancel:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
+/* ── Publish Notice ── */
+.btn-publish {
+  background: #2563eb;
+  color: #fff;
+  border: 1px solid transparent;
+  width: 100%;
+  justify-content: center;
+  padding: 11px 20px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.btn-publish:hover { background: #1d4ed8; }
+
+/* ── Notice Delete ── */
+.btn-delete {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 7px;
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #fecaca;
+}
+
+.btn-delete:hover { background: #fecaca; border-color: #fca5a5; }
+
+/* ── Icon-only buttons (row actions) ── */
+.as-btn-icon,
+.pro-btn-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.as-btn-icon.as-edit,
+.pro-btn-icon.pro-view {
+  background: #dbeafe;
+  color: #2563eb;
+  border-color: #bfdbfe;
+}
+
+.as-btn-icon.as-edit:hover,
+.pro-btn-icon.pro-view:hover {
+  background: #bfdbfe;
+}
+
+.as-btn-icon.as-delete,
+.pro-btn-icon.pro-del {
+  background: #fee2e2;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+.as-btn-icon.as-delete:hover,
+.pro-btn-icon.pro-del:hover {
+  background: #fecaca;
+}
+
+/* ── Timetable delete ── */
+.admin-timetable .delete-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  font-size: 0.8rem;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.admin-timetable .delete-btn:hover { background: #fecaca; }
+
+/* ── View / Download (notes) ── */
+.view-btn {
+  background: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+  padding: 5px 12px;
+  font-size: 0.82rem;
+}
+
+.view-btn:hover { background: #bfdbfe; }
+
+/* ── Clear filter ── */
+.pro-clear-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.pro-clear-btn:hover { background: #f1f5f9; border-color: #cbd5e1; }
+
+/* ── Subject chip delete ── */
+.pro-chip-del {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 0.7rem;
+  text-decoration: none;
+  border: 1px solid #fecaca;
+  cursor: pointer;
+}
+
+.pro-chip-del:hover { background: #fecaca; }

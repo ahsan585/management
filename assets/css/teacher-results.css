@@ -1,0 +1,7 @@
+/* Teacher Results — admin-results.css ke upar override */
+/* admin-results.css already loaded hai, yahan sirf teacher-specific tweaks */
+
+.teacher-results-page .ar-form-sub {
+  font-size: 0.75rem;
+  color: #64748b;
+}

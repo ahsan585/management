@@ -1,0 +1,304 @@
+/* Admin Dashboard */
+
+.admin-dashboard .stat-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard .stat-card {
+  padding: 20px 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.07);
+  background: #fff;
+}
+
+.admin-dashboard .stat-card .stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+/* Card backgrounds */
+.admin-dashboard .stat-card.students { background: #dbeafe; border: none; }
+.admin-dashboard .stat-card.teachers { background: #dcfce7; border: none; }
+.admin-dashboard .stat-card.notices  { background: #f3e8ff; border: none; }
+.admin-dashboard .stat-card.notes    { background: #ffedd5; border: none; }
+
+/* Icon box colors */
+.admin-dashboard .stat-card.students .stat-icon { background: #2563eb; color: #fff; }
+.admin-dashboard .stat-card.teachers .stat-icon { background: #16a34a; color: #fff; }
+.admin-dashboard .stat-card.notices  .stat-icon { background: #9333ea; color: #fff; }
+.admin-dashboard .stat-card.notes    .stat-icon { background: #ea580c; color: #fff; }
+
+/* Text colors */
+.admin-dashboard .stat-card.students strong,
+.admin-dashboard .stat-card.students .stat-label { color: #1e3a8a; }
+.admin-dashboard .stat-card.teachers strong,
+.admin-dashboard .stat-card.teachers .stat-label { color: #14532d; }
+.admin-dashboard .stat-card.notices strong,
+.admin-dashboard .stat-card.notices .stat-label  { color: #581c87; }
+.admin-dashboard .stat-card.notes strong,
+.admin-dashboard .stat-card.notes .stat-label    { color: #7c2d12; }
+
+.admin-dashboard .stat-card strong {
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+  color: #1f2a37;
+}
+
+.admin-dashboard .stat-card .stat-label {
+  font-size: 0.85rem;
+  color: #65748b;
+  font-weight: 500;
+}
+
+.admin-dashboard .dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard .dashboard-chart {
+  padding: 20px;
+}
+
+.admin-dashboard .dashboard-chart h3 {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.admin-dashboard .dashboard-chart canvas {
+  width: 100% !important;
+  height: 260px !important;
+}
+
+.admin-dashboard .top-students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.admin-dashboard .student-tile {
+  padding: 14px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.06);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.admin-dashboard .student-tile .avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.admin-dashboard .student-tile .tile-info strong {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.admin-dashboard .student-tile .tile-info .small {
+  font-size: 0.8rem;
+}
+
+.admin-dashboard .grade-pill {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: rgba(59,130,246,.12);
+  color: #2563eb;
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .admin-dashboard .stat-cards { grid-template-columns: repeat(2, 1fr); }
+  .admin-dashboard .dashboard-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 500px) {
+  .admin-dashboard .stat-cards { grid-template-columns: 1fr 1fr; }
+  .admin-dashboard .ts-meta { flex-direction: column; gap: 2px; }
+  .admin-dashboard .ts-head { flex-wrap: wrap; gap: 8px; }
+}
+
+.admin-dashboard .ts-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.admin-dashboard .ts-head-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-dashboard .ts-head-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #fef9c3;
+  color: #ca8a04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.admin-dashboard .ts-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #2563eb;
+  padding: 6px 12px;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  background: #eff6ff;
+  text-decoration: none;
+}
+
+.admin-dashboard .ts-view-all:hover {
+  background: #dbeafe;
+}
+
+.admin-dashboard .ts-empty {
+  text-align: center;
+  padding: 32px 20px;
+  color: #94a3b8;
+}
+
+.admin-dashboard .ts-empty i {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  display: block;
+  opacity: 0.4;
+}
+
+.admin-dashboard .ts-empty p {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.admin-dashboard .ts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-dashboard .ts-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fafbfc;
+}
+
+.admin-dashboard .ts-row:first-child { border-left: 3px solid #ca8a04; }
+.admin-dashboard .ts-row:nth-child(2) { border-left: 3px solid #94a3b8; }
+.admin-dashboard .ts-row:nth-child(3) { border-left: 3px solid #ea580c; }
+
+.admin-dashboard .ts-rank {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.admin-dashboard .ts-row:first-child .ts-rank { background: #fef9c3; color: #ca8a04; }
+.admin-dashboard .ts-row:nth-child(2) .ts-rank { background: #f1f5f9; color: #64748b; }
+.admin-dashboard .ts-row:nth-child(3) .ts-rank { background: #ffedd5; color: #ea580c; }
+
+.admin-dashboard .ts-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #e2e8f0;
+  flex-shrink: 0;
+}
+
+.admin-dashboard .ts-info { flex: 1; min-width: 0; }
+
+.admin-dashboard .ts-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1f2a37;
+  margin-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.admin-dashboard .ts-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.admin-dashboard .ts-meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.admin-dashboard .ts-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+.admin-dashboard .ts-grade {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.admin-dashboard .ts-pct {
+  font-size: 0.78rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .admin-dashboard .ts-meta { flex-direction: column; gap: 2px; }
+}
